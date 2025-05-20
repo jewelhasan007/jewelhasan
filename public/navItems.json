@@ -13,9 +13,9 @@
  },
  {
         "id" : 3,
-  "title": "Service",
-  "path" : "/service",
-  "section":"service"
+  "title": "Work",
+  "path" : "/work",
+  "section":"work"
  },
  {
         "id" : 4,
