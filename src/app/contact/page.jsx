@@ -8,7 +8,7 @@ const page = () => {
         <div className='space-y-3 m-3 p-3'>
             <h1 className='text-3xl'>Let’s grow your Business together</h1>
             <h2 className='text-2xl'>Let’s talk about your business branding stratagis?</h2>
-            <p className='flex items-center'><IoMdMail className='mr-3 text-2xl'></IoMdMail> Mail: <Link href='mailto:mawsumiakthter661@gmail.com'><span className='text-red-500 mx-2'>mawsumiakthter661@gmail.com</span> </Link> </p>
+            <p className='flex items-center'><IoMdMail className='mr-3 text-2xl'></IoMdMail> Mail: <Link href='mailto:mawsumiakthter661@gmail.com'><span className='text-red-500 mx-2'>jewelhasan.eee@outlook.com</span> </Link> </p>
             <p className='flex items-center'> <FaWhatsapp className='mr-3 text-2xl'></FaWhatsapp>  Whatsapp: <span className='text-green-400 font-bold mx-2'> 01714821830</span>  </p>
             <div className='lg:flex mx-5 text-3xl pt-7'>
                 <Link href='https://www.facebook.com/share/19BqTkpi3c/'><FaFacebook className='mx-5 text-[#3b5998]'></FaFacebook></Link>

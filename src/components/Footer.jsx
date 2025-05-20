@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import DayDate from './DayDate';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -8,10 +9,10 @@ const Footer = () => {
 
     return (
 // footer-1
-<footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 pt-30">
+<footer className="footer bg-[#E0EDC3] sm:footer-horizontal footer-center text-base-content p-4 pt-30">
   <aside>
   <DayDate></DayDate>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by Mawsumi Akter</p>
+    <p>Copyright © {new Date().getFullYear()} - Designed & Built by <Link href='mailto:mawsumiakthter661@gmail.com'><span className='text-blue-500 mx-1'>jewelhasan.eee@outlook.com</span> </Link></p>
 
   </aside>
 </footer>

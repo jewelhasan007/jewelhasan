@@ -1,0 +1,31 @@
+
+    {
+    "frontend" :[
+        {
+        "id": 1,
+        "title":"React"
+    },
+    {
+        "id": 2,
+        "title":"Next.js"
+    },
+    {
+        "id": 3,
+        "title":"Shadcn"
+    },
+    {
+        "id": 4,
+        "title":"Tailwind CSS"
+    },
+    {
+        "id": 5,
+        "title":"Framer Motion"
+    },
+    {
+        "id": 6,
+        "title":"Tanstack Query"
+    }
+    ]
+    }
+
+  

@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import React, { useEffect, useState } from "react";
-import { TypeAnimation } from "react-type-animation";
 
 
 const Navbar = () => {
 
   const activeColor = "#d62976";
+  const menuColor = "#769656";
     const pathname = usePathname();
   const [allSections, setAllSections] = useState([]);
   
@@ -34,7 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar bg-pink-100 shadow-sm">
+    <div className="navbar bg-[#E0EDC3] shadow-sm">
       <div className="navbar-start">
         <div className={` ${isDropdownOpen ? 'dropdown' : ''}`}>
           <div onClick={handleDropdownToggle} tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,10 +61,10 @@ const Navbar = () => {
               className="menu-md dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               {allSections?.map((item) => (
-                <li key={item.id} className="px-3">
+                <li key={item.id} className="px-2">
                   <Link
                     style={{
-                      color: pathname === `${item.path}` ? activeColor : "black",
+                      color: pathname === `${item.path}` ? activeColor : menuColor,
                       textDecoration:
                         pathname === `${item.path}` ? "underline" : "none",
                     }}
@@ -80,30 +80,17 @@ const Navbar = () => {
 }
          
         </div>
-       <button className="btn btn-sm btn-outline btn-primary "> <Link href="/">Mawsumi Akter</Link> ||
-             <TypeAnimation 
-        sequence={[
-          "I'm a Digital Marketer",
-          3000,
-          "I'm a SEO Expert",
-          3000,
-          "I'm a Content Writer",
-          3000,
-        ]}
-        speed={50}
-        repeat={Infinity}
-        style={{ fontSize: '1.5em' }}
-      />
-       </button>
+       <Link href="/" className="text-3xl font-bold ml-7">JH</Link> 
+      
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-md menu-horizontal ">
         
         {allSections?.map((item) => (
-          <li key={item.id} className="px-3" >
+          <li key={item.id} className="px-2" >
             <Link
               style={{
-                color: pathname === `${item.path}` ? activeColor : "black",
+                color: pathname === `${item.path}` ? activeColor : menuColor,
                 textDecoration:
                   pathname === `${item.path}` ? "underline" : "none",
               }}

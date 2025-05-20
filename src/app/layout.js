@@ -1,7 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Serif, PT_Serif, Roboto, Share, Share_Tech, Share_Tech_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Roboto, Inter } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,15 +15,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mawsumi Akter || Home",
-  description: "Digital Marketer",
+  title: "Jewel Hasan - Developer & Designer",
+  description: "Web Developer & UI-UX Designer",
 };
+
+const inter = Inter({
+  weight: [ "400", "700"],
+  subsets: ["latin"],
+});
+
+const share_tech = Share({
+  weight: [  "400","700"],
+  subsets: ["latin"],
+});
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+});
+
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-6xl mx-auto  bg-white text-black dark:bg-black dark:text-white`}
       >
         <Navbar></Navbar>
         {children}
