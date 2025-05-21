@@ -109,9 +109,9 @@ const Navbar = () => {
       <div className="navbar-end">
 
 
-        {/* Login Button */}
+       
         <div>
-        {/* <button className="btn btn-sm btn-outline btn-primary"> <Link href="/">Login</Link></button> */}
+         <button className="btn btn-md hover:scale-110 transition-transform duration-300 text-white bg-black "> <Link href="/contact">Book a Call</Link></button> 
         </div>
       </div>
      </div>
