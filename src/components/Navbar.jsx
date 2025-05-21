@@ -34,7 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 px-[100px]  rounded-b-xl bg-white/30 backdrop-blur-md border-gray-200 transition-all duration-500">
+    <div className="fixed sm:bg-[#E0EDC3] top-0 left-0 right-0 z-50 lg:px-[100px]  rounded-b-xl lg:bg-white/30 backdrop-blur-md border-gray-200 transition-all duration-500">
      <div className="  bg-[#E0EDC3]  justify-between items-center navbar">
        <div className="navbar-start ">
         <div className={` ${isDropdownOpen ? 'dropdown' : ''}`}>
