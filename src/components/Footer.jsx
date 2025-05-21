@@ -12,8 +12,8 @@ const Footer = () => {
 <footer className="footer bg-[#E0EDC3] sm:footer-horizontal footer-center text-base-content p-4 pt-30">
   <aside>
   <DayDate></DayDate>
-    <p>Copyright © {new Date().getFullYear()} - Designed & Built by <Link href='mailto:mawsumiakthter661@gmail.com'><span className='text-blue-500 mx-1'>jewelhasan.eee@outlook.com</span> </Link></p>
-
+    <p>Copyright © {new Date().getFullYear()} - Designed & Built by Jewel Hasan <Link href='mailto:mawsumiakthter661@gmail.com'><span className='text-blue-500 mx-1'>jewelhasan.eee@outlook.com</span> </Link></p>
+     
   </aside>
 </footer>
 

@@ -15,7 +15,7 @@ const page = () => {
    const activeColor = "#d62976";
     return (
       
-          <div  className='mt-3 '>
+          <div  className=' mt-[70px]'>
            
   <h2 className="lg:text-center font-bold text-[#769656] text-4xl">
     

@@ -1,8 +1,8 @@
-import { Geist, Geist_Mono, Noto_Serif, PT_Serif, Roboto, Share, Share_Tech, Share_Tech_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Serif, PT_Serif, Roboto, Share, Share_Tech, Share_Tech_Mono, Ubuntu } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Roboto, Inter } from "next/font/google";
+import { Roboto, Inter, Ubuntu } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,14 +33,21 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+const ubuntu = Ubuntu({
+  weight: [ "300", "400", "500", "700"],
+  subsets: ["latin"],
+});
+
+
+
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={ubuntu.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-6xl mx-auto  bg-white text-black dark:bg-black dark:text-white`}
       >
-        <Navbar></Navbar>
+        <Navbar ></Navbar>
         {children}
         <Footer></Footer>
       </body>

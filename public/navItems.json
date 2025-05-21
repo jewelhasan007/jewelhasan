@@ -19,9 +19,9 @@
  },
  {
         "id" : 4,
-  "title": "Portfolio",
-  "path" : "/portfolio",
-  "section":"portfolio"
+  "title": "Service",
+  "path" : "/service",
+  "section":"service"
  },
 
  {

@@ -34,8 +34,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar bg-[#E0EDC3] shadow-sm    ">
-      <div className="navbar-start">
+    <div className="fixed top-0 left-0 right-0 z-50 px-[100px]  rounded-b-xl bg-white/30 backdrop-blur-md border-gray-200 transition-all duration-500">
+     <div className="  bg-[#E0EDC3]  justify-between items-center navbar">
+       <div className="navbar-start ">
         <div className={` ${isDropdownOpen ? 'dropdown' : ''}`}>
           <div onClick={handleDropdownToggle} tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -113,6 +114,7 @@ const Navbar = () => {
         {/* <button className="btn btn-sm btn-outline btn-primary"> <Link href="/">Login</Link></button> */}
         </div>
       </div>
+     </div>
     </div>
   );
 };

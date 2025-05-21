@@ -9,7 +9,7 @@ import Skill from './Skill';
 
 const page = () => {
     return (
-       <div className='text-center my-3'>
+       <div className='text-center my-3 mt-[70px]'>
         {/* name of each tab group should be unique */}
         <h1 className='lg:text-4xl text-2xl font-bold text-primary'>
           Pilot by ♥️,
