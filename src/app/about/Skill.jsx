@@ -13,18 +13,20 @@ const Skill = () => {
 
     useEffect(() => {
         const loadSkills = async() =>{
-            const frontEnd = await fetch('./frontend.json')
-            const backEnd = await fetch('./backend.json')
-            const db = await fetch('./db.json')
-            const workflow = await fetch('./workflow.json')
-            const currently = await fetch('./currently.json')
+            // const frontEnd = await fetch('./frontend.json')
+            // const backEnd = await fetch('./backend.json')
+            // const db = await fetch('./db.json')
+            // const workflow = await fetch('./workflow.json')
+            // const currently = await fetch('./currently.json')
 
-            const dataFront = await frontEnd.json()
-            const dataBack = await backEnd.json()
-            const dataDb = await db.json()
-            const dataWorkflow = await workflow.json()
-            const dataCurrently = await currently.json()
-         
+            // const dataFront = await frontEnd.json()
+            // const dataBack = await backEnd.json()
+            // const dataDb = await db.json()
+            // const dataWorkflow = await workflow.json()
+            // const dataCurrently = await currently.json()
+            
+            
+           
             setFrontend(dataFront.frontend)
             setBackend(dataBack.backend)
             setDB(dataDb.db)
@@ -113,5 +115,110 @@ const Skill = () => {
         </div>
     );
 };
+
+
+const dataFront = {
+    "frontend" :[
+        {
+        "id": 1,
+        "title":"React"
+    },
+    {
+        "id": 2,
+        "title":"Next.js"
+    },
+    {
+        "id": 3,
+        "title":"Shadcn"
+    },
+    {
+        "id": 4,
+        "title":"Tailwind CSS"
+    },
+    {
+        "id": 5,
+        "title":"Framer Motion"
+    },
+    {
+        "id": 6,
+        "title":"Tanstack Query"
+    }
+    ]
+    }
+const dataBack = { 
+    "backend":[
+        {
+        "id": 1,
+        "title":"Nodejs"
+    },
+    {
+        "id": 2,
+        "title":"Express"
+    },
+    {
+        "id": 3,
+        "title":"NPM"
+    }
+  
+    ]
+    
+    
+    
+ 
+}
+const dataDb = 
+    {
+    "db" :[
+        {
+        "id": 1,
+        "title":"Postgres"
+    },
+    {
+        "id": 2,
+        "title":"Docker"
+    },
+    {
+        "id": 3,
+        "title":"Prisma ORM"
+    },
+    {
+        "id": 4,
+        "title":"MongoDB"
+    }
+    ]
+    }
+const dataWorkflow = 
+    {
+    "workflow" :[
+        {
+        "id": 1,
+        "title":"Git"
+    },
+    {
+        "id": 2,
+        "title":"Github"
+    },
+    {
+        "id": 3,
+        "title":"Figma"
+    },
+    {
+        "id": 4,
+        "title":"ChatGPT"
+    }
+    ]
+    }
+const dataCurrently =
+    {
+    "currently" :[
+        {
+        "id": 1,
+        "title":"Postgres"
+    }
+    ]
+    }
+
+  
+  
 
 export default Skill;
