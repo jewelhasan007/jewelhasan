@@ -37,14 +37,14 @@ const Skill = () => {
     },[])
  
     return (
-        <div className=' grid grid-cols-2 gap-15 text-left space-x-2 space-y-0 '>
+        <div className=' lg:grid grid-cols-2 gap-15 text-left space-x-2 space-y-0 '>
             
        <div className='bg-neutral-50 p-2 rounded-[5px]'>
              <h5 className=' font-semibold mb-2'>Frontend</h5>
-        <div className='grid grid-cols-3 gap-3'>  
+        <div className='lg:grid grid-cols-3 gap-3'>  
             {
                 frontend.map((skill) =>(
-                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px]'>{skill.title}</p>
+                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px] mb-2'>{skill.title}</p>
                   
                 ))
             }
@@ -53,10 +53,10 @@ const Skill = () => {
         </div>  
        <div className='bg-neutral-50 p-2 rounded-[5px]'>
              <h5 className=' font-semibold mb-2'>Backend</h5>
-        <div className='grid grid-cols-3 gap-3'>  
+        <div className='lg:grid grid-cols-3 gap-3'>  
             {
                 backend.map((skill) =>(
-                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px]'>{skill.title}</p>
+                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px] mb-2'>{skill.title}</p>
                   
                 ))
             }
@@ -65,10 +65,10 @@ const Skill = () => {
         </div>  
        <div className='bg-neutral-50 p-2 rounded-[5px]'>
              <h5 className=' font-semibold mb-2'>DB & Services</h5>
-        <div className='grid grid-cols-3 gap-3'>  
+        <div className='lg:grid grid-cols-3 gap-3'>  
             {
                 db.map((skill) =>(
-                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px]'>{skill.title}</p>
+                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px] mb-2'>{skill.title}</p>
                   
                 ))
             }
@@ -77,10 +77,10 @@ const Skill = () => {
         </div>  
        <div className='bg-neutral-50 p-2 rounded-[5px]'>
              <h5 className=' font-semibold mb-2'>Workflow Stack</h5>
-        <div className='grid grid-cols-3 gap-3'>  
+        <div className='lg:grid grid-cols-3 gap-3'>  
             {
                 workflow.map((skill) =>(
-                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px]'>{skill.title}</p>
+                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px] mb-2'>{skill.title}</p>
                   
                 ))
             }
@@ -102,10 +102,10 @@ const Skill = () => {
                
                 Currently Learning</h5>
              </div>
-        <div className='grid grid-cols-3 gap-3'>  
+        <div className='lg:grid grid-cols-3 gap-3'>  
             {
                 currently.map((skill) =>(
-                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px]'>{skill.title}</p>
+                  <p className='bg-gray-200 text-center p-1 text-[14px] rounded-[5px] mb-2'>{skill.title}</p>
                   
                 ))
             }

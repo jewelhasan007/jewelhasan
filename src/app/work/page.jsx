@@ -25,11 +25,11 @@ const page = () => {
              {
             amI.map((item)=>(
 
-                 <div key={item.id} className="flex justify-between bg-base-100 shadow-sm  min-h-[400px] shadow-indigo-500/50 ">
-  <figure className=" w-3/5 px-10 pt-10">
+                 <div key={item.id} className="lg:flex justify-between bg-base-100 shadow-sm  min-h-[400px] shadow-indigo-500/50 ">
+  <figure className=" lg:w-3/5 sm:w-full px-10 pt-10">
     <iframe
   src={`${item.website}`}
-  className="w-full h-screen"
+  className="w-full lg:h-screen sm:h-[300px] "
   sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
   allow="fullscreen"
 />
@@ -40,7 +40,7 @@ const page = () => {
       width='550px'
       height='550px' /> */}
   </figure>
-  <div className=" w-2/5 text-center p-10">
+  <div className=" lg:w-2/5 sm:w-full text-center p-10">
     <h2 className="card-title mb-3">{item.title}</h2>
     <p className='text-justify'>{item.description}</p>
     <button className='btn  mt-4'><Link href={`${item.website}`}>Explore Details</Link></button>
