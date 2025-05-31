@@ -27,8 +27,8 @@ const WhoAmI = () => {
       src={item.image}
       alt="Shoes"
       className="rounded-xl"
-      width='100px'
-      height='100px' />
+      width='90px'
+      height='90px' />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{item.title}</h2>
