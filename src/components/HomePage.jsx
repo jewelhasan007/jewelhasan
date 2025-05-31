@@ -8,6 +8,7 @@ import { RiGithubLine } from "react-icons/ri";
 import { IoCallOutline } from "react-icons/io5";
 import { LuLinkedin } from "react-icons/lu";
 import { TbBrandTwitter } from "react-icons/tb";
+import Technology from './Technology';
 
 const HomePage = () => {
     return (
@@ -65,6 +66,7 @@ const HomePage = () => {
                 <TbBrandTwitter />
              </div>
                 <WhoAmI></WhoAmI>
+                <Technology></Technology>
             </div>
         </div>
     );
