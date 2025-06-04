@@ -9,8 +9,12 @@ import { IoCallOutline } from "react-icons/io5";
 import { LuLinkedin } from "react-icons/lu";
 import { TbBrandTwitter } from "react-icons/tb";
 import Technology from './Technology';
+import ChangeBG from './ChangeBG';
 
 const HomePage = () => {
+
+
+  
     return (
         <div className='sm:text-center md:text-left lg:text-left mt-[70px]'>
        {/* Title  */}
@@ -67,6 +71,7 @@ const HomePage = () => {
              </div>
                 <WhoAmI></WhoAmI>
                 <Technology></Technology>
+                
             </div>
         </div>
     );
